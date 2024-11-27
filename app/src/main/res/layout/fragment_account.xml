@@ -1,19 +1,78 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CA1616"
-    tools:context=".fargment.AccountFragment">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
 
-    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription=""
+        android:src="@drawable/img3" />
+
+
     <TextView
+        android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Account fragment"
-        android:layout_centerInParent="true"
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        />
+        android:layout_marginTop="16dp"
+        android:text="Welcome First Name Last Name"
+        android:textSize="18sp"
+        android:textAlignment="center" />
 
-</RelativeLayout>
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Do you want to buy or sell?"
+        android:textSize="16sp"
+        android:textAlignment="center" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <android.widget.Button
+            android:id="@+id/buyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I want to buy"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#00BCD4"
+           />
+
+        <android.widget.Button
+            android:id="@+id/sellButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I want to sell" />
+    </LinearLayout>
+
+
+    <CheckBox
+        android:id="@+id/rememberChoiceCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Remember my choice" />
+
+
+    <android.widget.Button
+        android:id="@+id/okButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Ok"
+        android:background="#00BCD4"/>
+
+</LinearLayout>

@@ -48,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
                     case 2:
                         bottomNavigationView.getMenu().findItem(R.id.menu_account).setChecked(true);
                         break;
+                    default:
+                        break;
                 }
 
             }
@@ -71,7 +73,8 @@ public class MainActivity extends AppCompatActivity {
                 } else if (id == R.id.menu_account) {
                     viewPager.setCurrentItem(2);
                     return true;
-                } else {
+                }
+                else {
                     return false;
                 }
             }

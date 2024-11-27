@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.fragment.app.ListFragment;
 
 
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
@@ -21,6 +22,7 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
                 return new OrderFragment();
             case 2:
                 return new AccountFragment();
+
             default:
                 return new HomeFragment();
         }
